@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinXbridge Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Our Expertise</a></li>
+                <li><a href="#framework">K-IDEAS Framework</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Empowering Businesses through Tailored IT and Process Consulting</h1>
+        <p>Your Success, Our Expertise – A Consultative Approach to Overcoming Industry Challenges</p>
+        <button onclick="scrollToSection('services')">Explore Our Services</button>
+        <button onclick="scrollToSection('contact')">Get in Touch</button>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about-section">
+        <h2>Who We Are</h2>
+        <p>FinXbridge Solutions takes pride in our Consultative Approach to understanding our clients' unique challenges. Our team comes from a strong background in Product, Business Analysis, and Banking Solutions, making us a trusted partner for industries worldwide.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>IT Strategy Blueprint and Roadmap</h3>
+                <p>We create IT strategies that drive business growth by aligning technology with business goals.</p>
+            </div>
+            <div class="service">
+                <h3>IT Solution Evaluation</h3>
+                <p>We help businesses choose the right IT solutions and negotiate contracts with vendors.</p>
+            </div>
+            <div class="service">
+                <h3>Business Process Reengineering (BPR)</h3>
+                <p>Our experts redefine your business workflows to improve efficiency and reduce operational costs.</p>
+            </div>
+            <div class="service">
+                <h3>Techno-Functional Business Analyst Services</h3>
+                <p>We bridge the gap between IT and Business to ensure seamless project execution.</p>
+            </div>
+            <div class="service">
+                <h3>IT Application Implementation & Deployment</h3>
+                <p>End-to-end project management for IT applications, ensuring success from implementation to user adoption.</p>
+            </div>
+            <div class="service">
+                <h3>Data Migration Management</h3>
+                <p>We handle complex data migrations to ensure smooth transitions to new IT applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise-section">
+        <h2>Our Expertise</h2>
+        <p>Why Choose FinXbridge?</p>
+        <p>We are a product and vendor-neutral firm, ensuring our recommendations are aligned with your best interests.</p>
+    </section>
+
+    <!-- Framework Section -->
+    <section id="framework" class="framework-section">
+        <h2>K-IDEAS Framework</h2>
+        <p>We use our K-IDEAS framework to assess IT Application deployment across six dimensions:</p>
+        <ul>
+            <li>System Functionality</li>
+            <li>System Performance & Reliability</li>
+            <li>System Usability</li>
+            <li>Process Workflow</li>
+            <li>Change Management</li>
+            <li>IT Support</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="submit_form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FinXbridge Solutions</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
