@@ -1,113 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FinXbridge Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#expertise">Our Expertise</a></li>
-                <li><a href="#framework">K-IDEAS Framework</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="nav-wrapper">
+          <ul id="nav-menu">
+            <li>
+              <a href="javascript:void(0)" onclick="scrollToSection('home')"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="scrollToSection('about')"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="scrollToSection('services')"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                onclick="scrollToSection('expertise')"
+                >Our Expertise</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                onclick="scrollToSection('framework')"
+                >K-IDEAS Framework</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="scrollToSection('contact')"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Hamburger button -->
+          <button id="nav-toggle" class="nav-toggle">
+            &#9776;
+            <!-- This is the hamburger icon -->
+          </button>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Empowering Businesses through Tailored IT and Process Consulting</h1>
-        <p>Your Success, Our Expertise – A Consultative Approach to Overcoming Industry Challenges</p>
-        <button onclick="scrollToSection('services')">Explore Our Services</button>
-        <button onclick="scrollToSection('contact')">Get in Touch</button>
+      <h1>Empowering Businesses through Tailored IT and Process Consulting</h1>
+      <p>
+        Your Success, Our Expertise – A Consultative Approach to Overcoming
+        Industry Challenges
+      </p>
+      <button onclick="scrollToSection('services')">
+        Explore Our Services
+      </button>
+      <button onclick="scrollToSection('contact')">Get in Touch</button>
     </section>
 
-    <!-- About Us -->
+    <!-- About Section -->
     <section id="about" class="about-section">
+      <div class="about-text">
         <h2>Who We Are</h2>
-        <p>FinXbridge Solutions takes pride in our Consultative Approach to understanding our clients' unique challenges. Our team comes from a strong background in Product, Business Analysis, and Banking Solutions, making us a trusted partner for industries worldwide.</p>
+        <p>
+          FinXbridge Solutions takes pride in our Consultative Approach to
+          understanding our clients' unique challenges. Our team comes from a
+          strong background in Product, Business Analysis, and Banking
+          Solutions, making us a trusted partner for industries worldwide.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="about-image.jpg" alt="About Us" />
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services-section">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <h3>IT Strategy Blueprint and Roadmap</h3>
-                <p>We create IT strategies that drive business growth by aligning technology with business goals.</p>
-            </div>
-            <div class="service">
-                <h3>IT Solution Evaluation</h3>
-                <p>We help businesses choose the right IT solutions and negotiate contracts with vendors.</p>
-            </div>
-            <div class="service">
-                <h3>Business Process Reengineering (BPR)</h3>
-                <p>Our experts redefine your business workflows to improve efficiency and reduce operational costs.</p>
-            </div>
-            <div class="service">
-                <h3>Techno-Functional Business Analyst Services</h3>
-                <p>We bridge the gap between IT and Business to ensure seamless project execution.</p>
-            </div>
-            <div class="service">
-                <h3>IT Application Implementation & Deployment</h3>
-                <p>End-to-end project management for IT applications, ensuring success from implementation to user adoption.</p>
-            </div>
-            <div class="service">
-                <h3>Data Migration Management</h3>
-                <p>We handle complex data migrations to ensure smooth transitions to new IT applications.</p>
-            </div>
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <i class="fas fa-chart-line"></i>
+          <h3>IT Strategy Blueprint</h3>
+          <p>
+            We create IT strategies that drive business growth by aligning
+            technology with business goals.
+          </p>
         </div>
+        <div class="service-item">
+          <i class="fas fa-laptop-code"></i>
+          <h3>IT Solution Evaluation</h3>
+          <p>
+            We help businesses choose the right IT solutions and negotiate
+            contracts with vendors.
+          </p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-sync-alt"></i>
+          <h3>Business Process Reengineering</h3>
+          <p>
+            Our experts redefine your business workflows to improve efficiency
+            and reduce operational costs.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Expertise Section -->
     <section id="expertise" class="expertise-section">
-        <h2>Our Expertise</h2>
-        <p>Why Choose FinXbridge?</p>
-        <p>We are a product and vendor-neutral firm, ensuring our recommendations are aligned with your best interests.</p>
+      <h2>Our Expertise</h2>
+      <div class="expertise-list">
+        <div class="expertise-item">
+          <h3>Lending Solutions</h3>
+          <p>
+            We have deep expertise in lending solutions, ensuring smooth
+            operations for financial institutions.
+          </p>
+        </div>
+        <div class="expertise-item">
+          <h3>Business Process Consulting</h3>
+          <p>
+            Our process consulting services are designed to streamline business
+            operations and reduce costs.
+          </p>
+        </div>
+        <div class="expertise-item">
+          <h3>IT Application Implementation</h3>
+          <p>
+            We provide end-to-end IT application implementation services to
+            ensure seamless technology adoption.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Framework Section -->
+    <!-- K-IDEAS Framework Section -->
     <section id="framework" class="framework-section">
-        <h2>K-IDEAS Framework</h2>
-        <p>We use our K-IDEAS framework to assess IT Application deployment across six dimensions:</p>
-        <ul>
-            <li>System Functionality</li>
-            <li>System Performance & Reliability</li>
-            <li>System Usability</li>
-            <li>Process Workflow</li>
-            <li>Change Management</li>
-            <li>IT Support</li>
-        </ul>
+      <h2>K-IDEAS Framework</h2>
+      <p>
+        We use our K-IDEAS framework to assess IT Application deployment across
+        six key dimensions:
+      </p>
+      <ul>
+        <li>System Functionality</li>
+        <li>System Performance & Reliability</li>
+        <li>System Usability</li>
+        <li>Process Workflow</li>
+        <li>Change Management</li>
+        <li>IT Support</li>
+      </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <form action="submit_form" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="company">Company:</label>
-            <input type="text" id="company" name="company">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+      <h2>Contact Us</h2>
+      <form action="submit_form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 FinXbridge Solutions</p>
+      <p>&copy; 2024 FinXbridge Solutions</p>
     </footer>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
