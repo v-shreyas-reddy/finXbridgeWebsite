@@ -409,11 +409,36 @@ footer {
 /* For Tablets */
 @media screen and (max-width: 768px) {
   nav ul {
-    display: none;
+    display: none; /* Initially hide the menu */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
   }
 
   .nav-toggle {
-    display: block;
+    display: block; /* Show hamburger button */
+    font-size: 2em;
+    color: var(--text-light);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  /* Show the menu when the 'open' class is added */
+  nav ul.open {
+    display: flex; /* Now the menu will be visible */
+    position: absolute;
+    top: 60px; /* Push it below the header */
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color); /* Match the navbar background */
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
   }
 
   .hero h1 {
@@ -443,7 +468,22 @@ footer {
 /* For Mobile Devices */
 @media screen and (max-width: 480px) {
   nav ul {
-    display: none;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  /* Show the menu when the 'open' class is added */
+  nav ul.open {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    flex-direction: column;
   }
 
   nav ul li {
