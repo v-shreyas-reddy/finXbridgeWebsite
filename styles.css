@@ -468,33 +468,41 @@ footer .privacy-policy a:hover {
 /* Responsive Design or media queries */
 /* For Tablets */
 @media screen and (max-width: 768px) {
+  /* NAV BAR*/
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   nav ul {
-    display: none; /* Initially hide the menu */
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
   }
 
   .nav-toggle {
-    display: block; /* Show hamburger button */
+    display: block;
     font-size: 2em;
     color: var(--text-light);
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
+    margin-left: auto;
   }
 
-  /* Show the menu when the 'open' class is added */
   nav ul.open {
-    display: flex; /* Now the menu will be visible */
+    display: flex;
     position: absolute;
-    top: 60px; /* Push it below the header */
+    top: 60px;
     left: 0;
     width: 100%;
-    background-color: var(--primary-color); /* Match the navbar background */
+    background-color: var(--primary-color);
     padding: 20px;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   nav ul li {
@@ -529,14 +537,20 @@ footer .privacy-policy a:hover {
 
 /* For Mobile Devices */
 @media screen and (max-width: 480px) {
+  /* NAV BAR*/
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   nav ul {
-    display: none; /* Initially hidden */
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
   }
 
-  /* Show the menu when the 'open' class is added */
   nav ul.open {
     display: flex;
     position: absolute;
@@ -546,10 +560,22 @@ footer .privacy-policy a:hover {
     background-color: var(--primary-color);
     padding: 20px;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   nav ul li {
     margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 10px;
+    margin-left: auto;
   }
 
   .hero h1 {
