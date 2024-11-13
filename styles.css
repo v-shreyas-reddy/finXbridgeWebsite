@@ -42,6 +42,19 @@ header {
   align-items: center;
 }
 
+/* Logo Styles */
+.logo {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-logo {
+  height: 28px;
+  width: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
 /* Desktop Navigation */
 nav ul {
   list-style-type: none;
