@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FinXbridge Solutions</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -177,20 +178,20 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <h2>Contact Us</h2>
-      <form action="submit_form" method="POST">
+      <form action="" class="contact__form" id="contact-form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="contact-name" name="name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="contact-email" name="email" required />
 
         <label for="company">Company:</label>
-        <input type="text" id="company" name="company" />
+        <input type="text" id="contact-company" name="company" />
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="contact-message" name="message" required></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="contact__button">Submit</button>
       </form>
     </section>
 
@@ -212,5 +213,10 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </body>
 </html>
